@@ -1,5 +1,3 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.*;
 
 public class Main {
@@ -9,17 +7,14 @@ public class Main {
   static Set<Integer> people = new HashSet<>();
 
   public static void readInput() {
-    try {
-      BufferedReader reader = new BufferedReader(new FileReader("input"));
+    Scanner input = new Scanner(System.in);
 
-      String line = reader.readLine();
+    try {
+      String line = input.nextLine();
       egor = new Person(Integer.valueOf(line));
 
-      while(true) {
-        line = reader.readLine();
-        if (line == null)
-          break;
-
+      while(input.hasNextLine()) {
+        line = input.nextLine();
         String parts[] = line.split("\\s+");
 
         int id = Integer.valueOf(parts[0]);
@@ -34,9 +29,7 @@ public class Main {
         }
         egorFriends.add(new Person(id, friendList));
       }
-      reader.close();
     } catch (Exception e) {
-      System.out.println(e.toString());
     }
   }
 
