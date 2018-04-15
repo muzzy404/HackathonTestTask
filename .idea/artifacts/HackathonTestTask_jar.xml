@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HackathonTestTask:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HackathonTestTask_jar</output-path>
+    <root id="archive" name="HackathonTestTask.jar">
+      <element id="module-output" name="HackathonTestTask" />
+    </root>
+  </artifact>
+</component>
