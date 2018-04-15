@@ -31,8 +31,4 @@ public class Person {
     }
     return false;
   }
-
-  public List<Integer> getFriendList() {
-    return friendList;
-  }
 }

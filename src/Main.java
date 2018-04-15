@@ -29,8 +29,7 @@ public class Main {
         }
         egorFriends.add(new Person(id, friendList));
       }
-    } catch (Exception e) {
-    }
+    } catch (Exception e) { }
   }
 
   public static void main(String[] args) {
